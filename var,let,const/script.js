@@ -29,3 +29,27 @@ console.log(greeting3);
 
 // greeting3 = 'hi';
 // console.log(greeting3);
+
+console.log('====================');
+
+// var : 함수 단위 스코프
+function func1() {
+    if (true) {
+        var a = 'a';
+        console.log(a);
+    }
+    console.log(a);
+}
+
+func1();
+
+// let, const : 블록 단위 스코프
+function func2() {
+    if (true) {
+        let a = 'a';
+        console.log(a);
+    }
+    console.log(a);
+}
+
+func2();
